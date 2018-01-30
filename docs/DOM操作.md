@@ -81,10 +81,10 @@
     ```
 
 5. 父子iframe通信
-```js
-// 调用父iframe的方法
-parent.frames['searchListIframe'].methodName();
-
-// 获取父iframe的dom
-$(parent.frames["filterFrame"].document).contents()).find("selectorName");
-```
+    ```js
+    // 调用父iframe的方法
+    parent.frames['searchListIframe'].methodName();
+    
+    // 获取父iframe的dom
+    $(parent.frames["filterFrame"].document).contents()).find("selectorName");
+    ```
