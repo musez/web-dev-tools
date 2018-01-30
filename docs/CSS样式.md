@@ -19,6 +19,7 @@
 
 ## 文本溢出显示省略号
 1. 单行文本
+
 ```
 p {
     overflow: hidden;
@@ -32,6 +33,7 @@ p {
 2. 多行文本
 
 **第1种情况**
+
 ```
 p {
     display: -webkit-box;
@@ -49,6 +51,7 @@ p {
 ```
 
 **第2种情况**
+
 ```
 p {
     position: relative;
@@ -88,6 +91,7 @@ ie8：filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#AARRGGBB,
 ## vue隐藏显示的\{\{\}\}
 
 ```
+
 /*vue*/
 [v-cloak] {
     display: none !important;
