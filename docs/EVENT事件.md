@@ -1,7 +1,7 @@
 # EVENT事件
 
 1. 阻止事件冒泡
-    ```js
+    ```javascript
     // 阻止事件冒泡
     function stopEventBubble (event) {
         var e = event || window.event;
@@ -15,7 +15,7 @@
     ```
 
 2. js实现jquery ready方法
-    ```js
+    ```javascript
     // js实现jquery ready方法
     function ready (fn) {
         if (document.addEventListener) { // 标准浏览器

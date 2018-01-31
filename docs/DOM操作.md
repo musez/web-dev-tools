@@ -1,7 +1,7 @@
 # DOM操作
 
 1. 是否有class
-    ```js
+    ```javascript
     /**
      * @desc 是否有class
      * @param {Object} obj
@@ -15,7 +15,7 @@
     ```
 
 2. 添加class
-    ```js
+    ```javascript
     /**
      * @desc 添加class
      * @param {Object} obj
@@ -27,7 +27,7 @@
     ```
 
 3. 删除class
-    ```js
+    ```javascript
     /**
      * @desc 删除class
      * @param {Object} obj
@@ -44,7 +44,7 @@
     ```
     
 4. 获取指定元素的子元素
-    ```js
+    ```javascript
     /**
      * 获取指定元素的子元素
      * @param {object} curEle
@@ -81,7 +81,7 @@
     ```
 
 5. 父子iframe通信
-    ```js
+    ```javascript
     // 调用父iframe的方法
     parent.frames['searchListIframe'].methodName();
     
