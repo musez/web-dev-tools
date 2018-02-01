@@ -91,3 +91,120 @@
         display: none !important;
     }
     ```
+    
+## 时间轴
+1. 时间轴
+
+演示地址：[点击进入](../pages/timeline.html)
+
+html
+ ```html
+<ul class="timeline">
+    <li class="timeline_cell active">
+        <b></b>
+        <p class="timeline_cell-time">2018-01-01 00:00:00</p>
+        <p class="timeline_cell-desc"><a href="javascript:;">武汉佳软信息技术有限公司（以下简称”佳软信息”）</a>成立于2007年，是一家电子政务整体解决方案提供商，位于武汉东湖新技术开发区——“中国光谷”中心的光谷软件园。经过多年的发展，公司的业务范围扩展至政府门户网站建设、行政审批信息化、政府信息资源整合、政府行业管理系统的研发服务，涉及统一门户、统一用户、网站内容管理平台、全文检索、信息资源库、信息资源目录及信息交流平台等，不断为政务服务和民生服务提供优质产品。目前拥有湖北省交通运输厅、省财政厅、省国土资源厅、省公安厅、省质监局、省监察厅等40余家省直部门用户。</p>
+    </li>
+    <li class="timeline_cell">
+        <b></b>
+        <p class="timeline_cell-time">2018-01-01 00:00:00</p>
+        <p class="timeline_cell-desc">武汉佳软信息技术有限公司（以下简称”佳软信息”）</p>
+    </li>
+    <li class="timeline_cell">
+        <b></b>
+        <p class="timeline_cell-time">2018-01-01 00:00:00</p>
+        <p class="timeline_cell-desc">武汉佳软信息技术有限公司（以下简称”佳软信息”）</p>
+    </li>
+</ul>
+```
+scss
+```scss
+.timeline {
+  list-style-type: none;
+  padding: 0px;
+  border-left: 2px solid #ccc;
+  margin: 10px 10px 10px 20px;
+
+  @at-root .timeline_cell {
+    position: relative;
+    margin-top: 15px;
+    padding-left: 20px;
+
+    b:before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      width: 18px;
+      height: 18px;
+      border-radius: 9px;
+      background: #ccc;
+    }
+
+    &.active b:before {
+      background: #359;
+    }
+
+    .timeline_cell-time,
+    .timeline_cell-desc {
+      display: block;
+      color: #000;
+
+      a {
+        color: #359;
+        text-decoration: none;
+      }
+    }
+
+    &.active .timeline_cell-time {
+      color: #359;
+      font-weight: bolder;
+    }
+  }
+}
+```
+css
+```css
+.timeline {
+    list-style-type: none;
+    padding: 0px;
+    border-left: 2px solid #ccc;
+    margin: 10px 10px 10px 20px;
+}
+
+.timeline_cell {
+    position: relative;
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.timeline_cell b:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background: #ccc;
+}
+
+.timeline_cell.active b:before {
+    background: #359;
+}
+
+.timeline_cell .timeline_cell-time,
+.timeline_cell .timeline_cell-desc {
+    display: block;
+    color: #000;
+}
+
+.timeline_cell .timeline_cell-time a,
+.timeline_cell .timeline_cell-desc a {
+    color: #359;
+    text-decoration: none;
+}
+
+.timeline_cell.active .timeline_cell-time {
+    color: #359;
+    font-weight: bolder;
+}
+```
