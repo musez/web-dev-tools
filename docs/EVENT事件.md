@@ -65,7 +65,8 @@ function ready (fn) {
 ```
 
 **参数说明：**
-`hoverDelay`方法共四个参数，表示意思如下：
+hoverDelay方法共四个参数，表示意思如下：
+
 `hoverDuring`鼠标经过的延时时间
 
 `outDuring`鼠标移出的延时时间
