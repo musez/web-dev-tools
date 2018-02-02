@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<div id="ad" style="background: #890405;display: none;">
+    <div id="big"
+         style="height:250px;margin:0 auto;width:100%;background:url(http://sft.hubei.gov.cn/images/20180202.gif) center top no-repeat;"></div>
+    <div id="small"
+         style="display:none;height:80px;margin:0 auto;width:100%;background:url(http://sft.hubei.gov.cn/images/s_6.png) center top no-repeat;"></div>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.egs.gov.cn/js/jquery.tools.overlay.js"></script>
+<script>
+    $(document).ready(function () {
+        /**
+         * 获取当前系统时间的时间戳
+         * @returns {Number} - 时间戳 秒
+         */
+        function getCurUnix() {
+            var date = new Date(); // 将yyy-mm-dd格式装换成yyyy/mm/dd
+            return Date.parse(date) / 1000; // parseDate.parse()支持yyyy/mm/dd格式的毫秒数返回
+        }
+
+        /**
+         * 日期格式转换为时间戳
+         * 使用示例：dateToUnix("2018-01-01 00:00:00")
+         * @param {String} date - 日期 yyyy-MM-dd HH-mm-ss
+         * @returns {Number} - 时间戳 秒
+         */
+        function dateToUnix(date) {
+            if (date) {
+                var date = date.replace(/-/g, '/'); // 将yyy-mm-dd格式装换成yyyy/mm/dd
+                return Date.parse(new Date(date)) / 1000; // parseDate.parse()支持yyyy/mm/dd格式的毫秒数返回
+            } else {
+                return null;
+            }
+        }
+
+        /**
+         *
+         * @param {String} beginTime yyyy-MM-dd HH-mm-ss - 开始时间
+         * @param {String} endTime yyyy-MM-dd HH-mm-ss - 结束时间
+         */
+        function bannerTimer(beginTime, endTime) {
+            var currTime = getCurUnix();
+            var beginTime = dateToUnix(beginTime);
+            var endTime = dateToUnix(endTime);
+
+            if (currTime >= beginTime && currTime <= endTime) {//时间之间
+                $("#ad").show();
+                setTimeout("showad();", 10000);
+            } else if (currTime < beginTime) {//开始之前
+                //do nothing
+            } else if (currTime > endTime) {//已经结束
+                //do nothing
+            }
+        }
+
+        function showad() {
+            $("#big").slideUp(1000, function () {
+                $("#small").slideDown(1000);
+            });
+        };
+
+        //调用函数
+        bannerTimer("2018-02-02 11:27:00", "2018-02-02 11:45:00");
+    });
+</script>
+</body>
+</html>
