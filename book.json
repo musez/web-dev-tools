@@ -1,6 +1,13 @@
 {
   "title": "web-dev-tools",
   "author": "wang yue",
+  "language" : "zh-hans",
+  "description" : "web前端开发常用的工具函数和小功能",
+  "links" : {
+    "sidebar" : {
+      "Home" : "https://github.com/musez"
+    }
+  },
   "plugins": [
     "splitter",
     "-lunr",
@@ -27,7 +34,7 @@
       "tocLevel3Icon": "fa fa-hand-o-right"
     },
     "edit-link": {
-      "base": "https://github.com/musez/web-dev-tools/edit/master",
+      "base": "https://github.com/musez/web-dev-tools/edit/dev",
       "label": "编辑此页"
     },
     "fontsettings": {

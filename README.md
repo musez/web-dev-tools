@@ -1,8 +1,12 @@
-# 前端开发常见功能代码
+前端开发常见功能代码
 
-## [工具](docs/工具.md)
-## [日期](docs/日期.md)
-## [DOM操作](docs/DOM操作.md)
-## [CSS样式](docs/CSS样式.md)
-## [EVENT事件](docs/EVENT事件.md)
-## [小功能](docs/小功能.md)
+* [介绍](README.md)
+* [JAVASCRIPT](docs/chapter1/README.md)
+    * [工具](docs/chapter1/工具.md)
+    * [日期](docs/chapter1/日期.md)
+    * [DOM操作](docs/chapter1/DOM操作.md)
+    * [EVENT事件](docs/chapter1/EVENT事件.md)
+* [HTML与CSS](docs/chapter1/README.md)
+    * [CSS样式](docs/chapter2/CSS样式.md)
+* [小功能](docs/chapter3/README.md)
+    * [小功能](docs/chapter3/小功能.md)
