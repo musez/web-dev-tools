@@ -8,5 +8,6 @@
     * [EVENT事件](docs/chapter1/EVENT事件.md)
 * [HTML与CSS](docs/chapter1/README.md)
     * [CSS样式](docs/chapter2/CSS样式.md)
+    * [CSS3动画](docs/chapter2/CSS3动画.md)
 * [小功能](docs/chapter3/README.md)
     * [小功能](docs/chapter3/小功能.md)
