@@ -95,7 +95,7 @@
 ## 时间轴
 1. 时间轴
 
-演示地址：[点击进入](../pages/timeline.html)
+**演示地址**：[https://musez.github.io/web-dev-tools/pages/timeline.htm](https://musez.github.io/web-dev-tools/pages/timeline.html)
 
 html
  ```html
