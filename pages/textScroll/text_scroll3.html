@@ -7,16 +7,23 @@
     <link href='http://cdn.webfont.youziku.com/webfonts/nomal/23205/445/5a7973c1f629d9159cbfdbcc.css' rel='stylesheet'
           type='text/css'/>
     <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .hide {
+            display: none !important;
+        }
+
+        .show {
+            display: inline-block !important;
+        }
+
         .text-scroll_wrapper {
-            display: none;
-            background-color: #000;
-            _background-color: #eee;
-            background-color: #eee \0;
             padding: 10px;
             background: rgba(0, 0, 0, 0.1);
             filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#20000000, endcolorstr=#20000000);
-            left: 50% !important;
-            margin-left: -511px !important;
             z-index: 999999;
         }
 
@@ -50,11 +57,13 @@
             padding: 10px 40px 40px;
             margin-left: -390px;
             background-color: rgba(225, 225, 225, .8);
+            filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#99e1e1e1, endcolorstr=#99e1e1e1);
             overflow: hidden;
         }
 
         .text-scroll_title {
             font-family: 'RS_XingKai100f9572d25aa5';
+            font-size: 32px;
             text-align: center;
         }
 
@@ -64,6 +73,7 @@
         }
 
         .text-scroll_box p {
+            font-size: 16px;
             line-height: 2.5em;
             font-weight: bolder;
             margin-top: 0;
@@ -90,15 +100,15 @@
             left: 50%;
             margin-bottom: -100px;
             margin-left: -250px;
-            background: url("banner.png") no-repeat;
+            background-image: url("banner.png");
+            background-repeat: no-repeat;
             background-size: 100% 100%;
             z-index: 3;
-
         }
     </style>
 </head>
 <body>
-<div class="text-scroll_wrapper">
+<div class="text-scroll_wrapper hide">
     <div class="text-scroll">
         <a class="close" href="javascript:;"></a>
         <embed id="embedPlayer" src="9680.mp3" autostart="true" loop="true" hidden="true" height="0"/>
@@ -131,7 +141,7 @@
     </div>
 </div>
 
-<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery-tools/1.2.7/jquery.tools.min.js"></script>
 <script>
     $(document).ready(function () {
@@ -171,30 +181,18 @@
 
             if (currTime >= beginTime && currTime <= endTime) {//时间之间
                 //do something 页面加载完成后弹广告
+                $(".text-scroll_wrapper").removeClass("hide").addClass("show");
 
-
-                $(".text-scroll_wrapper").overlay({
-                    closeOnClick: false,
-                    speed: 'fast',
-                    top: '5%',
-                    mask: {
-                        color: '#000',
-                        closeSpeed: 200,
-                        opacity: 0.1
-                    },
-                    load: true
-                });
-
-                $(".text-scroll_wrapper").click(function () {
+                $(".text-scroll_wrapper .close").click(function () {
                     //停止播放音乐
                     try {
                         $("#embedPlayer")[0].stop();
                     } catch (err) {
-                        console.error(err);
+                        console.log(err);
                     }
 
                     //移除dom
-                    $(".text-scroll_wrapper").remove();
+                    window.parent.frames.closeNewYearWindow();
                 });
 
                 $(".text-scroll_banner").animate({
@@ -270,13 +268,11 @@
                     try {
                         $("#embedPlayer")[0].stop();
                     } catch (err) {
-                        console.error(err);
+                        console.log(err);
                     }
 
                     //移除dom
-                    $(".text-scroll_wrapper").remove();
-                    //关闭弹层
-                    $(".text-scroll_wrapper .close").click();
+                    window.parent.frames.closeNewYearWindow();
                 }, 55000);
             } else if (currTime < beginTime) {//开始之前
                 //do nothing
