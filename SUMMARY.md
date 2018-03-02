@@ -1,7 +1,7 @@
 # Summary
 
 * [介绍](README.md)
-* [JAVASCRIPT](docs/chapter1/README.md)
+* [JAVASCRIPT常见函数](docs/chapter1/README.md)
     * [工具](docs/chapter1/工具.md)
     * [日期](docs/chapter1/日期.md)
     * [DOM操作](docs/chapter1/DOM操作.md)
@@ -12,4 +12,7 @@
     * [CSS设置居中的方案](docs/chapter2/CSS设置居中的方案.md)
 * [小功能](docs/chapter3/README.md)
     * [小功能](docs/chapter3/小功能.md)
+* [开发工具](docs/chapter4/README.md)
+    * [小功能](docs/chapter4/开发者工具.md)
+* [markdown语法](docs/chapter5/README.md)
 
