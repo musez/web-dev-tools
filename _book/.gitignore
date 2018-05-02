@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+.vscode/
+_book/
+node_modules/
+.gitattributes
+yarn-error.log
+
