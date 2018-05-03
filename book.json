@@ -1,22 +1,55 @@
 {
   "title": "web-dev-tools",
-  "author": "wang yue",
-  "language" : "zh-hans",
-  "description" : "web前端开发常用的工具函数和小功能",
+  "author": "Wang Yue",
+  "language": "zh-hans",
+  "description": "web前端开发常用的工具函数和小功能",
+  "links": {
+    "sidebar": {
+      "Home": "https://github.com/musez"
+    }
+  },
+  "styles": {
+    "website": "styles/website.css",
+    "ebook": "styles/ebook.css",
+    "pdf": "styles/pdf.css",
+    "mobi": "styles/mobi.css",
+    "epub": "styles/epub.css"
+  },
   "plugins": [
     "splitter",
     "-lunr",
     "-search",
     "search-plus",
+    "prism",
+    "-highlight",
     "tbfed-pagefooter",
     "expandable-chapters-small",
     "anchors",
     "anchor-navigation-ex",
     "edit-link",
     "copy-code-button",
-    "-fontsettings"
+    "-fontsettings",
+    "disqus",
+    "github",
+    "github-buttons",
+    "include-codeblock",
+    "ace",
+    "emphasize",
+    "toggle-chapters",
+    "sectionx",
+    "codeblock-filename",
+    "baidu",
+    "simple-page-toc",
+    "sitemap-general",
+    "terminal",
+    "alerts",
+    "versions-select"
   ],
   "pluginsConfig": {
+    "prism": {
+      "css": [
+      ]
+    },
     "tbfed-pagefooter": {
       "copyright": "&copy 920317438@qq.com 2018",
       "modify_label": "修订时间：",
@@ -35,7 +68,58 @@
     "fontsettings": {
       "theme": "white",
       "family": "sans",
-      "size": 2
+      "size": 1
+    },
+    "disqus": {
+      "shortName": "gitbookuse"
+    },
+    "github": {
+      "url": "https://github.com/musez/web-dev-tools"
+    },
+    "github-buttons": {
+      "repo": "musez/web-dev-tools",
+      "types": [
+        "star",
+        "watch",
+        "fork"
+      ],
+      "size": "small"
+    },
+    "include-codeblock": {
+      "template": "ace",
+      "theme": "monokai"
+    },
+    "pluginsConfig": {
+      "sectionx": {
+        "tag": "b"
+      }
+    },
+    "baidu": {
+      "token": "YOUR TOKEN"
+    },
+    "simple-page-toc": {
+      "maxDepth": 3,
+      "skipFirstH1": true
+    },
+    "sitemap-general": {
+      "prefix": "https://github.com/musez/web-dev-tools"
+    },
+    "terminal": {
+      "copyButtons": true,
+      "fade": false,
+      "style": "flat"
+    },
+    "versions": {
+      "options": [
+        {
+          "value": "https://github.com/musez/web-dev-tools",
+          "text": "v0.1"
+        },
+        {
+          "value": "https://github.com/musez/web-dev-tools/tree/master",
+          "text": "v0.2"
+        }
+      ]
     }
   }
 }
