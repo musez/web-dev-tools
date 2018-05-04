@@ -5,15 +5,14 @@
   "description": "web前端开发常用的工具函数和小功能",
   "links": {
     "sidebar": {
-      "Home": "https://github.com/musez"
+      "Home": "https://musez.gitbooks.io/web-dev-tools/content/"
+    },
+    "sharing": {
+      "google": false,
+      "facebook": false,
+      "twitter": false,
+      "all": false
     }
-  },
-  "styles": {
-    "website": "styles/website.css",
-    "ebook": "styles/ebook.css",
-    "pdf": "styles/pdf.css",
-    "mobi": "styles/mobi.css",
-    "epub": "styles/epub.css"
   },
   "plugins": [
     "splitter",
@@ -52,7 +51,6 @@
     },
     "tbfed-pagefooter": {
       "copyright": "&copy WangYue 2018",
-      "islocal" : true,
       "modify_label": "修订时间：",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
@@ -115,10 +113,6 @@
         {
           "value": "https://github.com/musez/web-dev-tools",
           "text": "v0.1"
-        },
-        {
-          "value": "https://github.com/musez/web-dev-tools/tree/master",
-          "text": "v0.2"
         }
       ]
     }
