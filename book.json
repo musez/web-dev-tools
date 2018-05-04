@@ -51,9 +51,10 @@
       ]
     },
     "tbfed-pagefooter": {
-      "copyright": "&copy 920317438@qq.com 2018",
+      "copyright": "&copy WangYue 2018",
+      "islocal" : true,
       "modify_label": "修订时间：",
-      "modify_format": "2018-02-06 19:00:00"
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
     "anchor-navigation-ex": {
       "isShowTocTitleIcon": true,
