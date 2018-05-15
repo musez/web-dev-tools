@@ -3,4 +3,6 @@
 .vscode/
 _book/
 node_modules/
+.gitattributes
+yarn-error.log
 
