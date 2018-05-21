@@ -9,6 +9,7 @@
     * [正则表达式](docs/chapter1/正则表达式.md)
     * [算法-es6版](docs/chapter1/算法-es6版.md)
 * [HTML与CSS](docs/chapter2/README.md)
+    * [meta详解](docs/chapter2/meta详解.md)
     * [CSS样式](docs/chapter2/CSS样式.md)
     * [CSS3动画](docs/chapter2/CSS3动画.md)
     * [CSS设置居中的方案](docs/chapter2/CSS设置居中的方案.md)
