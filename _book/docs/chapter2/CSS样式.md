@@ -82,6 +82,21 @@
     ie8以上：rgba(RR,GG,BB,AA);
     
     ie8：filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#AARRGGBB,endColorstr=#AARRGGBB);
+    
+    “#AARRGGBB”是颜色的意思，是由两部分组成的。
+    第一部是透明度值：#AA 。是rgba透明度0.1的IEfilter值。从0.1到0.9每个数字对应一个IEfilter值。对应关系如下：
+  
+    |rgba透明值| IEfilter值|
+    |-|-|
+    |0.1|19|
+    |0.2|33|
+    |0.3|4c|
+    |0.4|66|
+    |0.5|7f|
+    |0.6|99|
+    |0.7|b2|
+    |0.8|c8|
+    |0.9|e5|
 
 ## vue
 1. 隐藏显示的\{\{\}\}
