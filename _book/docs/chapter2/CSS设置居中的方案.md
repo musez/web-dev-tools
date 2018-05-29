@@ -17,6 +17,7 @@
 ## 水平居中
 
 ### 行内元素 text-align: center;
+
 ```css
 .parent {
    text-align: center;

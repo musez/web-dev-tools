@@ -14,6 +14,7 @@
     * [CSS3动画](docs/chapter2/CSS3动画.md)
     * [CSS设置居中的方案](docs/chapter2/CSS设置居中的方案.md)
 * [开发工具](docs/chapter4/README.md)
+    * [Node.js安装及环境配置之Windows篇](docs/chapter4/Node.js安装及环境配置之Windows篇.md)
     * [开发者工具](docs/chapter4/开发者工具.md)
 * [markdown语法](docs/chapter5/README.md)
 * [版本记录](docs/README.md)
