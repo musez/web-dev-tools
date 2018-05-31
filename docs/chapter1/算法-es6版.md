@@ -228,3 +228,55 @@ Object.prototype.equals = function (object2) {
     return true;
 }
 ```
+
+## 随机数生成
+    1. min ≤ r ≤ max
+    ```javascript
+    function RandomNumBoth(Min,Max){
+          var Range = Max - Min;
+          var Rand = Math.random();
+          var num = Min + Math.round(Rand * Range); //四舍五入
+          return num;
+    }
+    ```
+
+    2. min ≤ r < max
+    ```javascript
+    function RandomNum(Min, Max) {
+          var Range = Max - Min;
+          var Rand = Math.random();
+          var num = Min + Math.floor(Rand * Range); //舍去
+          return num;
+    }
+    ```
+
+    3. min < r ≤ max
+    ```javascript
+    function RandomNum(Min, Max) {
+          var Range = Max - Min;
+          var Rand = Math.random();
+          if(Math.round(Rand * Range)==0){       
+            return Min + 1;
+          }
+          var num = Min + Math.round(Rand * Range);
+          return num;
+    }
+    ```
+
+    4. min < r < max 
+    ```javascript
+    function RandomNum(Min, Max) {
+          var Range = Max - Min;
+          var Rand = Math.random();
+          if(Math.round(Rand * Range)==0){
+            return Min + 1;
+          }else if(Math.round(Rand * Max)==Max)
+          {
+            index++;
+            return Max - 1;
+          }else{
+            var num = Min + Math.round(Rand * Range) - 1;
+            return num;
+          }
+     }
+    ```
