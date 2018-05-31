@@ -230,7 +230,7 @@ Object.prototype.equals = function (object2) {
 ```
 
 ## 随机数生成
-    1. min ≤ r ≤ max
+1. min ≤ r ≤ max
     ```javascript
     function RandomNumBoth(Min,Max){
           var Range = Max - Min;
@@ -240,7 +240,7 @@ Object.prototype.equals = function (object2) {
     }
     ```
 
-    2. min ≤ r < max
+2. min ≤ r < max
     ```javascript
     function RandomNum(Min, Max) {
           var Range = Max - Min;
@@ -250,7 +250,7 @@ Object.prototype.equals = function (object2) {
     }
     ```
 
-    3. min < r ≤ max
+3. min < r ≤ max
     ```javascript
     function RandomNum(Min, Max) {
           var Range = Max - Min;
@@ -263,7 +263,7 @@ Object.prototype.equals = function (object2) {
     }
     ```
 
-    4. min < r < max 
+4. min < r < max 
     ```javascript
     function RandomNum(Min, Max) {
           var Range = Max - Min;
