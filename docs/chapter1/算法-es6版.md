@@ -175,7 +175,7 @@ Object.defineProperty(Array.prototype, "equals", {
 });
 ```
 
-## 比较Object
+### 比较Object
 ``` javascript
 Object.prototype.equals = function (object2) {
     //For the first loop, we only check for types
@@ -280,3 +280,18 @@ Object.prototype.equals = function (object2) {
           }
      }
     ```
+    
+## 从数组中随机取出一项
+```
+function getFromArr(){
+	var prefixArray = ["134", "135", "136", "137", "138"];
+
+	var i = parseInt(prefixArray.length * Math.random());
+
+	var prefix = prefixArray[i];
+
+	for (var j = 0; j < 8; j++) {
+		prefix = prefix + Math.floor(Math.random() * 10);
+	}
+}
+```
