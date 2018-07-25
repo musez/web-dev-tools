@@ -175,7 +175,7 @@ Object.defineProperty(Array.prototype, "equals", {
 });
 ```
 
-## 比较Object
+### 比较Object
 ``` javascript
 Object.prototype.equals = function (object2) {
     //For the first loop, we only check for types
@@ -226,5 +226,72 @@ Object.prototype.equals = function (object2) {
     }
     //If everything passed, let's say YES
     return true;
+}
+```
+
+## 随机数生成
+1. min ≤ r ≤ max
+    ```javascript
+    function RandomNumBoth(Min,Max){
+          var Range = Max - Min;
+          var Rand = Math.random();
+          var num = Min + Math.round(Rand * Range); //四舍五入
+          return num;
+    }
+    ```
+
+2. min ≤ r < max
+    ```javascript
+    function RandomNum(Min, Max) {
+          var Range = Max - Min;
+          var Rand = Math.random();
+          var num = Min + Math.floor(Rand * Range); //舍去
+          return num;
+    }
+    ```
+
+3. min < r ≤ max
+    ```javascript
+    function RandomNum(Min, Max) {
+          var Range = Max - Min;
+          var Rand = Math.random();
+          if(Math.round(Rand * Range)==0){       
+            return Min + 1;
+          }
+          var num = Min + Math.round(Rand * Range);
+          return num;
+    }
+    ```
+
+4. min < r < max 
+    ```javascript
+    function RandomNum(Min, Max) {
+          var Range = Max - Min;
+          var Rand = Math.random();
+          if(Math.round(Rand * Range)==0){
+            return Min + 1;
+          }else if(Math.round(Rand * Max)==Max)
+          {
+            index++;
+            return Max - 1;
+          }else{
+            var num = Min + Math.round(Rand * Range) - 1;
+            return num;
+          }
+     }
+    ```
+    
+## 从数组中随机取出一项
+```
+function getFromArr(){
+	var prefixArray = ["134", "135", "136", "137", "138"];
+
+	var i = parseInt(prefixArray.length * Math.random());
+
+	var prefix = prefixArray[i];
+
+	for (var j = 0; j < 8; j++) {
+		prefix = prefix + Math.floor(Math.random() * 10);
+	}
 }
 ```

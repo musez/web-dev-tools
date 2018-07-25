@@ -1,6 +1,8 @@
 # Summary
 
 * [介绍](README.md)
+* [这是一个演示](docs/chapter/README.md)
+    * [demo](docs/chapter/demo.md)
 * [JAVASCRIPT常见函数](docs/chapter1/README.md)
     * [工具](docs/chapter1/工具.md)
     * [日期](docs/chapter1/日期.md)

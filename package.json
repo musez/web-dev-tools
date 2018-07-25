@@ -37,7 +37,7 @@
     "gh-pages": "^1.1.0"
   },
   "scripts": {
-	  "deploy":"gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
