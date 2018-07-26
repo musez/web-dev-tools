@@ -1,0 +1,717 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>markdown语法 · web-dev-tools</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Wang Yue">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../" />
+    
+    
+    <link rel="prev" href="../chapter4/开发者工具.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"musez/web-dev-tools","types":["star","watch","fork"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://musez.gitbooks.io/web-dev-tools/content/" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter/">
+            
+                <a href="../chapter/">
+            
+                    
+                    这是一个演示
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter/demo.html">
+            
+                <a href="../chapter/demo.html">
+            
+                    
+                    demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    JAVASCRIPT常见函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter1/工具.html">
+            
+                <a href="../chapter1/工具.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter1/日期.html">
+            
+                <a href="../chapter1/日期.html">
+            
+                    
+                    日期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter1/DOM操作.html">
+            
+                <a href="../chapter1/DOM操作.html">
+            
+                    
+                    DOM操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter1/EVENT事件.html">
+            
+                <a href="../chapter1/EVENT事件.html">
+            
+                    
+                    EVENT事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chapter1/正则表达式.html">
+            
+                <a href="../chapter1/正则表达式.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../chapter1/算法-es6版.html">
+            
+                <a href="../chapter1/算法-es6版.html">
+            
+                    
+                    算法-es6版
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter2/meta详解.html">
+            
+                <a href="../chapter2/meta详解.html">
+            
+                    
+                    meta详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter2/CSS样式.html">
+            
+                <a href="../chapter2/CSS样式.html">
+            
+                    
+                    CSS样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter2/CSS3动画.html">
+            
+                <a href="../chapter2/CSS3动画.html">
+            
+                    
+                    CSS3动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter2/CSS设置居中的方案.html">
+            
+                <a href="../chapter2/CSS设置居中的方案.html">
+            
+                    
+                    CSS设置居中的方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    开发工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter4/Node.js安装及环境配置之Windows篇.html">
+            
+                <a href="../chapter4/Node.js安装及环境配置之Windows篇.html">
+            
+                    
+                    Node.js安装及环境配置之Windows篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter4/开发者工具.html">
+            
+                <a href="../chapter4/开发者工具.html">
+            
+                    
+                    开发者工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    markdown语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    版本记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >markdown语法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#markdown&#x7684;&#x5E38;&#x7528;&#x8BED;&#x6CD5;"><b>1. </b>markdown&#x7684;&#x5E38;&#x7528;&#x8BED;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x7B80;&#x4ECB;"><b>2. </b>&#x7B80;&#x4ECB;</a></li><li><span class="title-icon "></span><a href="#markdown&#x7684;&#x5E38;&#x7528;&#x8BED;&#x6CD5;_1"><b>3. </b>markdown&#x7684;&#x5E38;&#x7528;&#x8BED;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6807;&#x9898;"><b>3.1. </b>&#x6807;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x5217;&#x8868;"><b>3.2. </b>&#x5217;&#x8868;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6709;&#x5E8F;&#x5217;&#x8868;"><b>3.2.1. </b>&#x6709;&#x5E8F;&#x5217;&#x8868;</a></li><li><span class="title-icon "></span><a href="#&#x65E0;&#x5E8F;&#x5217;&#x8868;"><b>3.2.2. </b>&#x65E0;&#x5E8F;&#x5217;&#x8868;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x6CE8;&#x91CA;"><b>4. </b>&#x6CE8;&#x91CA;</a></li></ul></div><a href="#markdown&#x7684;&#x5E38;&#x7528;&#x8BED;&#x6CD5;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="markdown&#x7684;&#x5E38;&#x7528;&#x8BED;&#x6CD5;"><a name="markdown&#x7684;&#x5E38;&#x7528;&#x8BED;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#markdown&#x7684;&#x5E38;&#x7528;&#x8BED;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1. markdown&#x7684;&#x5E38;&#x7528;&#x8BED;&#x6CD5;</h1>
+<h1 id="&#x7B80;&#x4ECB;"><a name="&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x7B80;&#x4ECB;</h1>
+<p>Markdown &#x662F;&#x4E00;&#x79CD;&#x8F7B;&#x91CF;&#x7EA7;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF0C;&#x5B83;&#x7528;&#x7B80;&#x6D01;&#x7684;&#x8BED;&#x6CD5;&#x4EE3;&#x66FF;&#x6392;&#x7248;&#xFF0C;&#x4F7F;&#x6211;&#x4EEC;&#x4E13;&#x5FC3;&#x4E8E;&#x7801;&#x5B57;&#x3002;&#x5B83;&#x7684;&#x76EE;&#x6807;&#x662F;&#x5B9E;&#x73B0;&#x6613;&#x8BFB;&#x6613;&#x5199;&#xFF0C;&#x6210;&#x4E3A;&#x4E00;&#x79CD;&#x9002;&#x7528;&#x4E8E;&#x7F51;&#x7EDC;&#x7684;&#x4E66;&#x5199;&#x8BED;&#x8A00;&#x3002;&#x540C;&#x65F6;&#xFF0C;Markdown&#x652F;&#x6301;&#x5D4C;&#x5165;<code>html</code>&#x6807;&#x7B7E;&#x3002;</p>
+<p><u>&#x6CE8;&#x610F;&#xFF1A;Markdown&#x4F7F;&#x7528;#&#x3001;+&#x3001;*&#x7B49;&#x7B26;&#x53F7;&#x6765;&#x6807;&#x8BB0;&#xFF0C; &#x7B26;&#x53F7;&#x540E;&#x9762;&#x5FC5;&#x987B;&#x8DDF;&#x4E0A; &#x81F3;&#x5C11;1&#x4E2A; &#x7A7A;&#x683C;&#x624D;&#x6709;&#x6548;&#xFF01;</u></p>
+<h1 id="markdown&#x7684;&#x5E38;&#x7528;&#x8BED;&#x6CD5;_1"><a name="markdown&#x7684;&#x5E38;&#x7528;&#x8BED;&#x6CD5;_1" class="anchor-navigation-ex-anchor" href="#markdown&#x7684;&#x5E38;&#x7528;&#x8BED;&#x6CD5;_1"><i class="fa fa-link" aria-hidden="true"></i></a>3. markdown&#x7684;&#x5E38;&#x7528;&#x8BED;&#x6CD5;</h1>
+<h2 id="&#x6807;&#x9898;"><a name="&#x6807;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x6807;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. &#x6807;&#x9898;</h2>
+<p>Markdown &#x6807;&#x9898;&#x652F;&#x6301;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;&#xFF1A;  </p>
+<ol>
+<li>&#x7528;<code>#</code>&#x6807;&#x8BB0;<br>&#x5728;<strong>&#x6807;&#x9898;&#x5F00;&#x5934;</strong>&#x52A0;&#x4E0A;1~6&#x4E2A;#&#xFF0C;&#x4F9D;&#x6B21;&#x4EE3;&#x8868;&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x3001;&#x4E8C;&#x7EA7;&#x6807;&#x9898;....&#x516D;&#x7EA7;&#x6807;&#x9898;  </li>
+<li>&#x7528;<code>=</code>&#x548C;<code>-</code>&#x6807;&#x8BB0;<br>&#x5728;<strong>&#x6807;&#x9898;&#x5E95;&#x4E0B;</strong>&#x52A0;&#x4E0A;&#x4EFB;&#x610F;&#x4E2A;<code>=</code>&#x4EE3;&#x8868;&#x4E00;&#x7EA7;&#x6807;&#x9898;&#xFF0C;<code>-</code>&#x4EE3;&#x8868;&#x4E8C;&#x7EA7;&#x6807;&#x9898;</li>
+</ol>
+<h2 id="&#x5217;&#x8868;"><a name="&#x5217;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. &#x5217;&#x8868;</h2>
+<h3 id="&#x6709;&#x5E8F;&#x5217;&#x8868;"><a name="&#x6709;&#x5E8F;&#x5217;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x6709;&#x5E8F;&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.1. &#x6709;&#x5E8F;&#x5217;&#x8868;</h3>
+<p>&#x6570;&#x5B57;&#x4E0D;&#x80FD;&#x7701;&#x7565;&#x4F46;&#x53EF;&#x65E0;&#x5E8F;&#xFF0C;&#x70B9;&#x53F7;&#x4E4B;&#x540E;&#x7684;&#x7A7A;&#x683C;&#x4E0D;&#x80FD;&#x5C11;&#x3002;&#x5EFA;&#x7ACB;&#x591A;&#x7EA7;&#x5217;&#x8868;&#x65F6;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B50;&#x7EA7;&#x522B;&#x90FD;&#x8981;&#x6BD4;&#x4E0A;&#x4E2A;&#x7EA7;&#x522B;&#x524D;&#x9762;&#x591A;&#x6253;2&#x4E2A;&#x4EE5;&#x4E0A;&#x7A7A;&#x683C;&#x3002;  </p>
+<pre class="language-"><code class="lang-html">1. Item-1
+   1.1. Item-1-1
+       1.1.1. Item-1-1-1
+          1.1.1.1. Item-1-1-1-1
+   1.2. Item-1-2
+2. Item-2
+3. Item-3
+</code></pre>
+<ol>
+<li>Item-1
+ 1.1. Item-1-1<pre class="language-"><code> 1.1.1. Item-1-1-1
+ 1.1.1.1. Item-1-1-1-1
+</code></pre> 1.2. Item-1-2</li>
+<li>Item-2</li>
+<li>Item-3</li>
+</ol>
+<h3 id="&#x65E0;&#x5E8F;&#x5217;&#x8868;"><a name="&#x65E0;&#x5E8F;&#x5217;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x65E0;&#x5E8F;&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.2. &#x65E0;&#x5E8F;&#x5217;&#x8868;</h3>
+<p>&#x7B26;&#x53F7;&#x4E4B;&#x540E;&#x7684;&#x7A7A;&#x683C;&#x4E0D;&#x80FD;&#x5C11;&#xFF0C;<code>-</code>&#x3001;<code>+</code>&#x3001;<code>*</code>&#x6548;&#x679C;&#x4E00;&#x6837;&#xFF0C;&#x5728;&#x5D4C;&#x5957;&#x5217;&#x8868;&#x4E2D;&#x53EF;&#x4EE5;&#x5FAA;&#x73AF;&#x4F7F;&#x7528;&#x3002;  </p>
+<pre class="language-"><code class="lang-html">- Item-1
+  - Item-1-1
+    + Item-1-1-1
+      * Item-1-1-1-1
+  * Item-1-2
++ Item-2
+* Item-3
+</code></pre>
+<ul>
+<li>Item-1<ul>
+<li>Item-1-1<ul>
+<li>Item-1-1-1<ul>
+<li>Item-1-1-1-1</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Item-1-2</li>
+</ul>
+</li>
+<li>Item-2</li>
+<li>Item-3</li>
+</ul>
+<p>&#x6CE8;&#xFF1A;&#x5217;&#x8868;&#x9879;&#x91CC;&#x9762;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x6BB5;&#x843D;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x6BB5;&#x843D;&#x5FC5;&#x987B;&#x7528;4&#x4E2A;&#x7A7A;&#x683C;&#x6216;1&#x4E2A;&#x5236;&#x8868;&#x7B26;&#x7F29;&#x8FDB;&#x3002;</p>
+<pre class="language-"><code class="lang-html">- Item-1
+   - Item-1-1
+      Item-1-1 (continued...)
+      Item-1-1 (continued...)
+  - Item-1-2
+-   Item-2
+</code></pre>
+<ul>
+<li>Item-1<ul>
+<li>Item-1-1<br>  Item-1-1 (continued...)<br>  Item-1-1 (continued...)<ul>
+<li>Item-1-2</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Item-2</li>
+</ul>
+<h1 id="&#x6CE8;&#x91CA;"><a name="&#x6CE8;&#x91CA;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x91CA;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x6CE8;&#x91CA;</h1>
+<pre class="language-"><code class="lang-html">[comment]: &lt;&gt; (&#x8FD9;&#x91CC;&#x662F;&#x6CE8;&#x91CA;)
+[//]: &lt;&gt; (&#x8FD9;&#x91CC;&#x662F;&#x6CE8;&#x91CA;)
+[//]: # (&#x8FD9;&#x91CC;&#x662F;&#x6CE8;&#x91CA;)
+[^_^]:
+    &#x8FD9;&#x91CC;&#x662F;&#x6CE8;&#x91CA;
+</code></pre>
+<footer class="page-footer"><span class="copyright">&#xA9; WangYue 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-07-25 12:15:54
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../chapter4/开发者工具.html" class="navigation navigation-prev " aria-label="Previous page: 开发者工具">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../" class="navigation navigation-next " aria-label="Next page: 版本记录">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"markdown语法","level":"1.6","depth":1,"next":{"title":"版本记录","level":"1.7","depth":1,"path":"docs/README.md","ref":"docs/README.md","articles":[]},"previous":{"title":"开发者工具","level":"1.5.2","depth":2,"path":"docs/chapter4/开发者工具.md","ref":"docs/chapter4/开发者工具.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","prism","-highlight","tbfed-pagefooter","expandable-chapters-small","anchors","anchor-navigation-ex","edit-link","copy-code-button","-fontsettings","disqus","github","github-buttons","include-codeblock","ace","emphasize","toggle-chapters","sectionx","codeblock-filename","baidu","simple-page-toc","sitemap-general","terminal","alerts","versions-select"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy WangYue 2018","modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":[]},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"pluginsConfig":{"sectionx":{"tag":"b"}},"emphasize":{},"ace":{},"github":{"url":"https://github.com/musez/web-dev-tools"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"versions-select":{"type":"branches"},"sitemap-general":{"prefix":"https://github.com/musez/web-dev-tools"},"fontsettings":{"theme":"white","family":"sans","size":1},"sectionx":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"codeblock-filename":{},"alerts":{},"github-buttons":{"repo":"musez/web-dev-tools","types":["star","watch","fork"],"size":"small"},"expandable-chapters-small":{},"copy-code-button":{},"baidu":{"token":"YOUR TOKEN"},"versions":{"options":[{"value":"https://github.com/musez/web-dev-tools","text":"v0.1"}]},"include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"label":"编辑此页","base":"https://github.com/musez/web-dev-tools/edit/dev"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"Wang Yue","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"web-dev-tools","language":"zh-hans","links":{"sidebar":{"Home":"https://musez.gitbooks.io/web-dev-tools/content/"},"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"web前端开发常用的工具函数和小功能"},"file":{"path":"docs/chapter5/README.md","mtime":"2018-07-25T04:15:54.283Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-26T07:13:15.062Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

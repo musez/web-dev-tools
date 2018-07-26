@@ -1,0 +1,53 @@
+{
+  "name": "web-dev-tools",
+  "version": "1.0.0",
+  "description": "web-dev-tools",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "gitbook-plugin-ace": "^0.3.2",
+    "gitbook-plugin-alerts": "^0.2.0",
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.10",
+    "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-baidu": "^0.1.0",
+    "gitbook-plugin-codeblock-filename": "^0.0.9",
+    "gitbook-plugin-copy-code-button": "^0.0.2",
+    "gitbook-plugin-edit-link": "^2.0.2",
+    "gitbook-plugin-disqus": "^0.1.0",
+    "gitbook-plugin-emphasize": "^1.1.0",
+    "gitbook-plugin-expandable-chapters-small": "^0.1.7",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-github-buttons": "^3.0.0",
+    "gitbook-plugin-include-codeblock": "^3.2.2",
+    "gitbook-plugin-prism": "^2.3.0",
+    "gitbook-plugin-search-plus": "^1.0.3",
+    "gitbook-plugin-search-pro": "^2.0.2",
+    "gitbook-plugin-sectionx": "^3.1.0",
+    "gitbook-plugin-simple-page-toc": "^0.1.2",
+    "gitbook-plugin-sitemap-general": "^0.1.1",
+    "gitbook-plugin-splitter": "^0.0.8",
+    "gitbook-plugin-tbfed-pagefooter": "^0.0.1",
+    "gitbook-plugin-terminal": "^0.3.2",
+    "gitbook-plugin-toggle-chapters": "^0.0.3",
+    "gitbook-plugin-versions-select": "^0.1.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musez/web-dev-tools.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/musez/web-dev-tools/issues"
+  },
+  "homepage": "https://github.com/musez/web-dev-tools#readme"
+}

@@ -1,0 +1,917 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>算法-es6版 · web-dev-tools</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Wang Yue">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../chapter2/" />
+    
+    
+    <link rel="prev" href="正则表达式.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"musez/web-dev-tools","types":["star","watch","fork"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://musez.gitbooks.io/web-dev-tools/content/" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter/">
+            
+                <a href="../chapter/">
+            
+                    
+                    这是一个演示
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter/demo.html">
+            
+                <a href="../chapter/demo.html">
+            
+                    
+                    demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    JAVASCRIPT常见函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="工具.html">
+            
+                <a href="工具.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="日期.html">
+            
+                <a href="日期.html">
+            
+                    
+                    日期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="DOM操作.html">
+            
+                <a href="DOM操作.html">
+            
+                    
+                    DOM操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="EVENT事件.html">
+            
+                <a href="EVENT事件.html">
+            
+                    
+                    EVENT事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="正则表达式.html">
+            
+                <a href="正则表达式.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.6" data-path="算法-es6版.html">
+            
+                <a href="算法-es6版.html">
+            
+                    
+                    算法-es6版
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter2/meta详解.html">
+            
+                <a href="../chapter2/meta详解.html">
+            
+                    
+                    meta详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter2/CSS样式.html">
+            
+                <a href="../chapter2/CSS样式.html">
+            
+                    
+                    CSS样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter2/CSS3动画.html">
+            
+                <a href="../chapter2/CSS3动画.html">
+            
+                    
+                    CSS3动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter2/CSS设置居中的方案.html">
+            
+                <a href="../chapter2/CSS设置居中的方案.html">
+            
+                    
+                    CSS设置居中的方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    开发工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter4/Node.js安装及环境配置之Windows篇.html">
+            
+                <a href="../chapter4/Node.js安装及环境配置之Windows篇.html">
+            
+                    
+                    Node.js安装及环境配置之Windows篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter4/开发者工具.html">
+            
+                <a href="../chapter4/开发者工具.html">
+            
+                    
+                    开发者工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    markdown语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    版本记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >算法-es6版</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x7B97;&#x6CD5;es6"><b>1. </b>&#x7B97;&#x6CD5;(es6)</a></li><ul><li><span class="title-icon "></span><a href="#js-&#x7EDF;&#x8BA1;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x51FA;&#x73B0;&#x9891;&#x7387;&#x6700;&#x9AD8;&#x7684;&#x5B57;&#x6BCD;&#x6570;&#x5B57;"><b>1.1. </b>js &#x7EDF;&#x8BA1;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x51FA;&#x73B0;&#x9891;&#x7387;&#x6700;&#x9AD8;&#x7684;&#x5B57;&#x6BCD;/&#x6570;&#x5B57;</a></li><li><span class="title-icon "></span><a href="#&#x6570;&#x7EC4;&#x53BB;&#x91CD;"><b>1.2. </b>&#x6570;&#x7EC4;&#x53BB;&#x91CD;</a></li><li><span class="title-icon "></span><a href="#&#x7FFB;&#x8F6C;&#x5B57;&#x7B26;&#x4E32;"><b>1.3. </b>&#x7FFB;&#x8F6C;&#x5B57;&#x7B26;&#x4E32;</a></li><li><span class="title-icon "></span><a href="#&#x6570;&#x7EC4;&#x4E2D;&#x6700;&#x5927;&#x5DEE;&#x503C;"><b>1.4. </b>&#x6570;&#x7EC4;&#x4E2D;&#x6700;&#x5927;&#x5DEE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x4E0D;&#x501F;&#x52A9;&#x4E34;&#x65F6;&#x53D8;&#x91CF;&#xFF0C;&#x8FDB;&#x884C;&#x4E24;&#x4E2A;&#x6574;&#x6570;&#x7684;&#x4EA4;&#x6362;"><b>1.5. </b>&#x4E0D;&#x501F;&#x52A9;&#x4E34;&#x65F6;&#x53D8;&#x91CF;&#xFF0C;&#x8FDB;&#x884C;&#x4E24;&#x4E2A;&#x6574;&#x6570;&#x7684;&#x4EA4;&#x6362;</a></li><li><span class="title-icon "></span><a href="#&#x6392;&#x5E8F;-&#x4ECE;&#x5C0F;&#x5230;&#x5927;"><b>1.6. </b>&#x6392;&#x5E8F; (&#x4ECE;&#x5C0F;&#x5230;&#x5927;)</a></li><ul><li><span class="title-icon "></span><a href="#&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x5426;&#x76F8;&#x540C;"><b>1.6.1. </b>&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x5426;&#x76F8;&#x540C;</a></li><li><span class="title-icon "></span><a href="#&#x6BD4;&#x8F83;object"><b>1.6.2. </b>&#x6BD4;&#x8F83;Object</a></li></ul><li><span class="title-icon "></span><a href="#&#x968F;&#x673A;&#x6570;&#x751F;&#x6210;"><b>1.7. </b>&#x968F;&#x673A;&#x6570;&#x751F;&#x6210;</a></li><li><span class="title-icon "></span><a href="#&#x4ECE;&#x6570;&#x7EC4;&#x4E2D;&#x968F;&#x673A;&#x53D6;&#x51FA;&#x4E00;&#x9879;"><b>1.8. </b>&#x4ECE;&#x6570;&#x7EC4;&#x4E2D;&#x968F;&#x673A;&#x53D6;&#x51FA;&#x4E00;&#x9879;</a></li></ul></ul></div><a href="#&#x7B97;&#x6CD5;es6" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7B97;&#x6CD5;es6"><a name="&#x7B97;&#x6CD5;es6" class="anchor-navigation-ex-anchor" href="#&#x7B97;&#x6CD5;es6"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x7B97;&#x6CD5;(es6)</h1>
+<h2 id="js-&#x7EDF;&#x8BA1;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x51FA;&#x73B0;&#x9891;&#x7387;&#x6700;&#x9AD8;&#x7684;&#x5B57;&#x6BCD;&#x6570;&#x5B57;"><a name="js-&#x7EDF;&#x8BA1;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x51FA;&#x73B0;&#x9891;&#x7387;&#x6700;&#x9AD8;&#x7684;&#x5B57;&#x6BCD;&#x6570;&#x5B57;" class="anchor-navigation-ex-anchor" href="#js-&#x7EDF;&#x8BA1;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x51FA;&#x73B0;&#x9891;&#x7387;&#x6700;&#x9AD8;&#x7684;&#x5B57;&#x6BCD;&#x6570;&#x5B57;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. js &#x7EDF;&#x8BA1;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x51FA;&#x73B0;&#x9891;&#x7387;&#x6700;&#x9AD8;&#x7684;&#x5B57;&#x6BCD;/&#x6570;&#x5B57;</h2>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">&apos;asdfghjklaqwertyuiopiaia&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> strChar <span class="token operator">=</span> str <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> string <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>str<span class="token punctuation">]</span><span class="token punctuation">,</span>
+        maxValue <span class="token operator">=</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">,</span>
+        obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        max <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    string<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>value <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        obj<span class="token punctuation">[</span>value<span class="token punctuation">]</span> <span class="token operator">=</span> obj<span class="token punctuation">[</span>value<span class="token punctuation">]</span> <span class="token operator">==</span> undefined <span class="token operator">?</span> <span class="token number">1</span> <span class="token punctuation">:</span> obj<span class="token punctuation">[</span>value<span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>obj<span class="token punctuation">[</span>value<span class="token punctuation">]</span> <span class="token operator">&gt;</span> max<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            max <span class="token operator">=</span> obj<span class="token punctuation">[</span>value<span class="token punctuation">]</span>
+            maxValue <span class="token operator">=</span> value
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">return</span> maxValue<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">strChar</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">)</span>    <span class="token comment" spellcheck="true">// a</span>
+</code></pre>
+<h2 id="&#x6570;&#x7EC4;&#x53BB;&#x91CD;"><a name="&#x6570;&#x7EC4;&#x53BB;&#x91CD;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x7EC4;&#x53BB;&#x91CD;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x6570;&#x7EC4;&#x53BB;&#x91CD;</h2>
+<ol>
+<li>forEach<pre class="language-"><code class="lang-javascript"> <span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&apos;1&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;2&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;3&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;1&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;a&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;b&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;b&apos;</span><span class="token punctuation">]</span>
+ <span class="token keyword">const</span> unique <span class="token operator">=</span> arr <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+     <span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+     arr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>value <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+         obj<span class="token punctuation">[</span>value<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+     <span class="token punctuation">}</span><span class="token punctuation">)</span>
+     <span class="token keyword">return</span> Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+ <span class="token punctuation">}</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">unique</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// [&apos;1&apos;,&apos;2&apos;,&apos;3&apos;,&apos;a&apos;,&apos;b&apos;]</span>
+</code></pre>
+</li>
+<li>filter<pre class="language-"><code class="lang-javascript"> <span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&apos;1&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;2&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;3&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;1&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;a&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;b&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;b&apos;</span><span class="token punctuation">]</span>
+ <span class="token keyword">const</span> unique <span class="token operator">=</span> arr <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> arr<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span>ele<span class="token punctuation">,</span> index<span class="token punctuation">,</span> array<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+         <span class="token keyword">return</span> index <span class="token operator">===</span> array<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>ele<span class="token punctuation">)</span>
+     <span class="token punctuation">}</span><span class="token punctuation">)</span>
+ <span class="token punctuation">}</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">unique</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// [&apos;1&apos;,&apos;2&apos;,&apos;3&apos;,&apos;a&apos;,&apos;b&apos;]</span>
+</code></pre>
+</li>
+<li>set<pre class="language-"><code class="lang-javascript"> <span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&apos;1&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;2&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;3&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;1&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;a&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;b&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;b&apos;</span><span class="token punctuation">]</span>
+ <span class="token keyword">const</span> unique <span class="token operator">=</span> arr <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">]</span>
+ <span class="token punctuation">}</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">unique</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// [&apos;1&apos;,&apos;2&apos;,&apos;3&apos;,&apos;a&apos;,&apos;b&apos;]</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="&#x7FFB;&#x8F6C;&#x5B57;&#x7B26;&#x4E32;"><a name="&#x7FFB;&#x8F6C;&#x5B57;&#x7B26;&#x4E32;" class="anchor-navigation-ex-anchor" href="#&#x7FFB;&#x8F6C;&#x5B57;&#x7B26;&#x4E32;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x7FFB;&#x8F6C;&#x5B57;&#x7B26;&#x4E32;</h2>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">let</span> str <span class="token operator">=</span><span class="token string">&quot;Hello Dog&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> reverseString <span class="token operator">=</span> str <span class="token operator">=</span><span class="token operator">&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token operator">...</span>str<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">reverseString</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">// goD olleH</span>
+</code></pre>
+<h2 id="&#x6570;&#x7EC4;&#x4E2D;&#x6700;&#x5927;&#x5DEE;&#x503C;"><a name="&#x6570;&#x7EC4;&#x4E2D;&#x6700;&#x5927;&#x5DEE;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x7EC4;&#x4E2D;&#x6700;&#x5927;&#x5DEE;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x6570;&#x7EC4;&#x4E2D;&#x6700;&#x5927;&#x5DEE;&#x503C;</h2>
+<ol>
+<li><p>forEach</p>
+<pre class="language-"><code class="lang-javascript"> <span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">23</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">71</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+ <span class="token keyword">const</span> difference <span class="token operator">=</span> arr <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+     <span class="token keyword">let</span> min <span class="token operator">=</span> arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+         max <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+     arr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>value <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+         <span class="token keyword">if</span> <span class="token punctuation">(</span>value <span class="token operator">&lt;</span> min<span class="token punctuation">)</span> min <span class="token operator">=</span> value
+         <span class="token keyword">if</span> <span class="token punctuation">(</span>value <span class="token operator">&gt;</span> max<span class="token punctuation">)</span> max <span class="token operator">=</span> value
+     <span class="token punctuation">}</span><span class="token punctuation">)</span>
+     <span class="token keyword">return</span> max <span class="token operator">-</span> min <span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">difference</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// 74</span>
+</code></pre>
+</li>
+<li><p>max&#x3001;min</p>
+<pre class="language-"><code class="lang-javascript"> <span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">23</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">71</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+ <span class="token keyword">const</span> difference <span class="token operator">=</span> arr <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+     <span class="token keyword">let</span> max <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token operator">...</span>arr<span class="token punctuation">)</span><span class="token punctuation">,</span>
+         min <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span><span class="token operator">...</span>arr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token keyword">return</span> max <span class="token operator">-</span> min <span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">difference</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 74</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="&#x4E0D;&#x501F;&#x52A9;&#x4E34;&#x65F6;&#x53D8;&#x91CF;&#xFF0C;&#x8FDB;&#x884C;&#x4E24;&#x4E2A;&#x6574;&#x6570;&#x7684;&#x4EA4;&#x6362;"><a name="&#x4E0D;&#x501F;&#x52A9;&#x4E34;&#x65F6;&#x53D8;&#x91CF;&#xFF0C;&#x8FDB;&#x884C;&#x4E24;&#x4E2A;&#x6574;&#x6570;&#x7684;&#x4EA4;&#x6362;" class="anchor-navigation-ex-anchor" href="#&#x4E0D;&#x501F;&#x52A9;&#x4E34;&#x65F6;&#x53D8;&#x91CF;&#xFF0C;&#x8FDB;&#x884C;&#x4E24;&#x4E2A;&#x6574;&#x6570;&#x7684;&#x4EA4;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x4E0D;&#x501F;&#x52A9;&#x4E34;&#x65F6;&#x53D8;&#x91CF;&#xFF0C;&#x8FDB;&#x884C;&#x4E24;&#x4E2A;&#x6574;&#x6570;&#x7684;&#x4EA4;&#x6362;</h2>
+<ol>
+<li>&#x6570;&#x7EC4;&#x89E3;&#x6784;<pre class="language-"><code class="lang-javascript"> <span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span>
+     b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+     <span class="token punctuation">[</span>b<span class="token punctuation">,</span>a<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">]</span>
+     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">// 3 2</span>
+</code></pre>
+</li>
+<li>&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#xFF08;&#x52A0;&#x51CF;&#xFF09;
+ &#x8F93;&#x5165;a = 2,b = 3,&#x8F93;&#x51FA; a = 3,b = 2<pre class="language-"><code class="lang-javascript"> <span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span>
+     b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+ <span class="token keyword">const</span> swop <span class="token operator">=</span> <span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+     b <span class="token operator">=</span> b <span class="token operator">-</span> a<span class="token punctuation">;</span>
+     a <span class="token operator">=</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+     b <span class="token operator">=</span> a <span class="token operator">-</span> b<span class="token punctuation">;</span>
+     <span class="token keyword">return</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">]</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">swop</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// [3,2]</span>
+</code></pre>
+</li>
+<li>&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#xFF08;&#x5F02;&#x6216;&#xFF09;<pre class="language-"><code class="lang-javascript"> <span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span>
+     b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+ <span class="token keyword">const</span> swop <span class="token operator">=</span> <span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+     a <span class="token operator">^</span><span class="token operator">=</span> b<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//x&#x5148;&#x5B58;x&#x548C;y&#x4E24;&#x8005;&#x7684;&#x4FE1;&#x606F;</span>
+     b <span class="token operator">^</span><span class="token operator">=</span> a<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//&#x4FDD;&#x6301;x&#x4E0D;&#x53D8;&#xFF0C;&#x5229;&#x7528;x&#x5F02;&#x6216;&#x53CD;&#x8F6C;y&#x7684;&#x539F;&#x59CB;&#x503C;&#x4F7F;&#x5176;&#x7B49;&#x4E8E;x&#x7684;&#x539F;&#x59CB;&#x503C;</span>
+     a <span class="token operator">^</span><span class="token operator">=</span> b<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//&#x4FDD;&#x6301;y&#x4E0D;&#x53D8;&#xFF0C;&#x5229;&#x7528;x&#x5F02;&#x6216;&#x53CD;&#x8F6C;y&#x7684;&#x539F;&#x59CB;&#x503C;&#x4F7F;&#x5176;&#x7B49;&#x4E8E;y&#x7684;&#x539F;&#x59CB;&#x503C;</span>
+     <span class="token keyword">return</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">]</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">swop</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// [3,2]</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="&#x6392;&#x5E8F;-&#x4ECE;&#x5C0F;&#x5230;&#x5927;"><a name="&#x6392;&#x5E8F;-&#x4ECE;&#x5C0F;&#x5230;&#x5927;" class="anchor-navigation-ex-anchor" href="#&#x6392;&#x5E8F;-&#x4ECE;&#x5C0F;&#x5230;&#x5927;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x6392;&#x5E8F; (&#x4ECE;&#x5C0F;&#x5230;&#x5927;)</h2>
+<ol>
+<li>&#x5192;&#x6CE1;&#x6392;&#x5E8F;<pre class="language-"><code class="lang-javascript"><span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">43</span><span class="token punctuation">,</span> <span class="token number">32</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> sort <span class="token operator">=</span> arr <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+ <span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+ arr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> i<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+     <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token keyword">if</span> <span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&gt;</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+             <span class="token punctuation">[</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span>
+         <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span><span class="token punctuation">)</span>
+ <span class="token keyword">return</span> arr
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">sort</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// [1, 5, 9, 22, 32, 43]</span>
+</code></pre>
+</li>
+</ol>
+<h3 id="&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x5426;&#x76F8;&#x540C;"><a name="&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x5426;&#x76F8;&#x540C;" class="anchor-navigation-ex-anchor" href="#&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x5426;&#x76F8;&#x540C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.1. &#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x5426;&#x76F8;&#x540C;</h3>
+<pre class="language-"><code class="lang-javascript"><span class="token comment" spellcheck="true">// Warn if overriding existing method</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>Array<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>equals<span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span>
+        <span class="token string">&quot;Overriding existing Array.prototype.equals. Possible causes: New API defines the method, there&apos;s a framework conflict or you&apos;ve got double inclusions in your code.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// attach the .equals method to Array&apos;s prototype to call it on any array</span>
+Array<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>equals <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>array<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// if the other array is a falsy value, return</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>array<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// compare lengths - can save a lot of time</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>length <span class="token operator">!=</span> array<span class="token punctuation">.</span>length<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> l <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> l<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// Check if we have nested arrays</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token keyword">instanceof</span> <span class="token class-name">Array</span> <span class="token operator">&amp;&amp;</span> array<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token keyword">instanceof</span> <span class="token class-name">Array</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">// recurse into the nested arrays</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">// Warning - two different object instances will never be equal: {x:20} != {x:20}</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// Hide method from for-in loops</span>
+Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>Array<span class="token punctuation">.</span>prototype<span class="token punctuation">,</span> <span class="token string">&quot;equals&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    enumerable<span class="token punctuation">:</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x6BD4;&#x8F83;object"><a name="&#x6BD4;&#x8F83;object" class="anchor-navigation-ex-anchor" href="#&#x6BD4;&#x8F83;object"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.2. &#x6BD4;&#x8F83;Object</h3>
+<pre class="language-"><code class="lang-javascript">Object<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>equals <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>object2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//For the first loop, we only check for types</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>propName <span class="token keyword">in</span> <span class="token keyword">this</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//Check for inherited methods and properties - like .equals itself</span>
+        <span class="token comment" spellcheck="true">//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty</span>
+        <span class="token comment" spellcheck="true">//Return false if the return value is different</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>propName<span class="token punctuation">)</span> <span class="token operator">!=</span> object2<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>propName<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment" spellcheck="true">//Check instance type</span>
+        <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> <span class="token keyword">this</span><span class="token punctuation">[</span>propName<span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token keyword">typeof</span> object2<span class="token punctuation">[</span>propName<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">//Different types =&gt; not equal</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">//Now a deeper check using other objects property names</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>propName <span class="token keyword">in</span> object2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//We must check instances anyway, there may be a property that only exists in object2</span>
+        <span class="token comment" spellcheck="true">//I wonder, if remembering the checked values from the first loop would be faster or not</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>propName<span class="token punctuation">)</span> <span class="token operator">!=</span> object2<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>propName<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> <span class="token keyword">this</span><span class="token punctuation">[</span>propName<span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token keyword">typeof</span> object2<span class="token punctuation">[</span>propName<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment" spellcheck="true">//If the property is inherited, do not check any more (it must be equa if both objects inherit it)</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>propName<span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token keyword">continue</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//Now the detail check and recursion</span>
+
+        <span class="token comment" spellcheck="true">//This returns the script back to the array comparing</span>
+        <span class="token comment" spellcheck="true">/**REQUIRES Array.equals**/</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">[</span>propName<span class="token punctuation">]</span> <span class="token keyword">instanceof</span> <span class="token class-name">Array</span> <span class="token operator">&amp;&amp;</span> object2<span class="token punctuation">[</span>propName<span class="token punctuation">]</span> <span class="token keyword">instanceof</span> <span class="token class-name">Array</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">// recurse into the nested arrays</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">[</span>propName<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>object2<span class="token punctuation">[</span>propName<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">[</span>propName<span class="token punctuation">]</span> <span class="token keyword">instanceof</span> <span class="token class-name">Object</span> <span class="token operator">&amp;&amp;</span> object2<span class="token punctuation">[</span>propName<span class="token punctuation">]</span> <span class="token keyword">instanceof</span> <span class="token class-name">Object</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">// recurse into another objects</span>
+            <span class="token comment" spellcheck="true">//console.log(&quot;Recursing to compare &quot;, this[propName],&quot;with&quot;,object2[propName], &quot; both named \&quot;&quot;+propName+&quot;\&quot;&quot;);</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">[</span>propName<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>object2<span class="token punctuation">[</span>propName<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment" spellcheck="true">//Normal value comparison for strings and numbers</span>
+        <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">[</span>propName<span class="token punctuation">]</span> <span class="token operator">!=</span> object2<span class="token punctuation">[</span>propName<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">//If everything passed, let&apos;s say YES</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="&#x968F;&#x673A;&#x6570;&#x751F;&#x6210;"><a name="&#x968F;&#x673A;&#x6570;&#x751F;&#x6210;" class="anchor-navigation-ex-anchor" href="#&#x968F;&#x673A;&#x6570;&#x751F;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. &#x968F;&#x673A;&#x6570;&#x751F;&#x6210;</h2>
+<ol>
+<li><p>min &#x2264; r &#x2264; max</p>
+<pre class="language-"><code class="lang-javascript"> <span class="token keyword">function</span> <span class="token function">RandomNumBoth</span><span class="token punctuation">(</span>Min<span class="token punctuation">,</span>Max<span class="token punctuation">)</span><span class="token punctuation">{</span>
+       <span class="token keyword">var</span> Range <span class="token operator">=</span> Max <span class="token operator">-</span> Min<span class="token punctuation">;</span>
+       <span class="token keyword">var</span> Rand <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token keyword">var</span> num <span class="token operator">=</span> Min <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>Rand <span class="token operator">*</span> Range<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//&#x56DB;&#x820D;&#x4E94;&#x5165;</span>
+       <span class="token keyword">return</span> num<span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>min &#x2264; r &lt; max</p>
+<pre class="language-"><code class="lang-javascript"> <span class="token keyword">function</span> <span class="token function">RandomNum</span><span class="token punctuation">(</span>Min<span class="token punctuation">,</span> Max<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token keyword">var</span> Range <span class="token operator">=</span> Max <span class="token operator">-</span> Min<span class="token punctuation">;</span>
+       <span class="token keyword">var</span> Rand <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token keyword">var</span> num <span class="token operator">=</span> Min <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Rand <span class="token operator">*</span> Range<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//&#x820D;&#x53BB;</span>
+       <span class="token keyword">return</span> num<span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>min &lt; r &#x2264; max</p>
+<pre class="language-"><code class="lang-javascript"> <span class="token keyword">function</span> <span class="token function">RandomNum</span><span class="token punctuation">(</span>Min<span class="token punctuation">,</span> Max<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token keyword">var</span> Range <span class="token operator">=</span> Max <span class="token operator">-</span> Min<span class="token punctuation">;</span>
+       <span class="token keyword">var</span> Rand <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token keyword">if</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>Rand <span class="token operator">*</span> Range<span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>       
+         <span class="token keyword">return</span> Min <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+       <span class="token punctuation">}</span>
+       <span class="token keyword">var</span> num <span class="token operator">=</span> Min <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>Rand <span class="token operator">*</span> Range<span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token keyword">return</span> num<span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>min &lt; r &lt; max </p>
+<pre class="language-"><code class="lang-javascript"> <span class="token keyword">function</span> <span class="token function">RandomNum</span><span class="token punctuation">(</span>Min<span class="token punctuation">,</span> Max<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token keyword">var</span> Range <span class="token operator">=</span> Max <span class="token operator">-</span> Min<span class="token punctuation">;</span>
+       <span class="token keyword">var</span> Rand <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token keyword">if</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>Rand <span class="token operator">*</span> Range<span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+         <span class="token keyword">return</span> Min <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+       <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>Rand <span class="token operator">*</span> Max<span class="token punctuation">)</span><span class="token operator">==</span>Max<span class="token punctuation">)</span>
+       <span class="token punctuation">{</span>
+         index<span class="token operator">++</span><span class="token punctuation">;</span>
+         <span class="token keyword">return</span> Max <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+       <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+         <span class="token keyword">var</span> num <span class="token operator">=</span> Min <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>Rand <span class="token operator">*</span> Range<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+         <span class="token keyword">return</span> num<span class="token punctuation">;</span>
+       <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="&#x4ECE;&#x6570;&#x7EC4;&#x4E2D;&#x968F;&#x673A;&#x53D6;&#x51FA;&#x4E00;&#x9879;"><a name="&#x4ECE;&#x6570;&#x7EC4;&#x4E2D;&#x968F;&#x673A;&#x53D6;&#x51FA;&#x4E00;&#x9879;" class="anchor-navigation-ex-anchor" href="#&#x4ECE;&#x6570;&#x7EC4;&#x4E2D;&#x968F;&#x673A;&#x53D6;&#x51FA;&#x4E00;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. &#x4ECE;&#x6570;&#x7EC4;&#x4E2D;&#x968F;&#x673A;&#x53D6;&#x51FA;&#x4E00;&#x9879;</h2>
+<pre class="language-"><code>function getFromArr(){
+    var prefixArray = [&quot;134&quot;, &quot;135&quot;, &quot;136&quot;, &quot;137&quot;, &quot;138&quot;];
+
+    var i = parseInt(prefixArray.length * Math.random());
+
+    var prefix = prefixArray[i];
+
+    for (var j = 0; j &lt; 8; j++) {
+        prefix = prefix + Math.floor(Math.random() * 10);
+    }
+}
+</code></pre><footer class="page-footer"><span class="copyright">&#xA9; WangYue 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-07-25 12:15:54
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="正则表达式.html" class="navigation navigation-prev " aria-label="Previous page: 正则表达式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../chapter2/" class="navigation navigation-next " aria-label="Next page: HTML与CSS">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"算法-es6版","level":"1.3.6","depth":2,"next":{"title":"HTML与CSS","level":"1.4","depth":1,"path":"docs/chapter2/README.md","ref":"docs/chapter2/README.md","articles":[{"title":"meta详解","level":"1.4.1","depth":2,"path":"docs/chapter2/meta详解.md","ref":"docs/chapter2/meta详解.md","articles":[]},{"title":"CSS样式","level":"1.4.2","depth":2,"path":"docs/chapter2/CSS样式.md","ref":"docs/chapter2/CSS样式.md","articles":[]},{"title":"CSS3动画","level":"1.4.3","depth":2,"path":"docs/chapter2/CSS3动画.md","ref":"docs/chapter2/CSS3动画.md","articles":[]},{"title":"CSS设置居中的方案","level":"1.4.4","depth":2,"path":"docs/chapter2/CSS设置居中的方案.md","ref":"docs/chapter2/CSS设置居中的方案.md","articles":[]}]},"previous":{"title":"正则表达式","level":"1.3.5","depth":2,"path":"docs/chapter1/正则表达式.md","ref":"docs/chapter1/正则表达式.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","prism","-highlight","tbfed-pagefooter","expandable-chapters-small","anchors","anchor-navigation-ex","edit-link","copy-code-button","-fontsettings","disqus","github","github-buttons","include-codeblock","ace","emphasize","toggle-chapters","sectionx","codeblock-filename","baidu","simple-page-toc","sitemap-general","terminal","alerts","versions-select"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy WangYue 2018","modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":[]},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"pluginsConfig":{"sectionx":{"tag":"b"}},"emphasize":{},"ace":{},"github":{"url":"https://github.com/musez/web-dev-tools"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"versions-select":{"type":"branches"},"sitemap-general":{"prefix":"https://github.com/musez/web-dev-tools"},"fontsettings":{"theme":"white","family":"sans","size":1},"sectionx":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"codeblock-filename":{},"alerts":{},"github-buttons":{"repo":"musez/web-dev-tools","types":["star","watch","fork"],"size":"small"},"expandable-chapters-small":{},"copy-code-button":{},"baidu":{"token":"YOUR TOKEN"},"versions":{"options":[{"value":"https://github.com/musez/web-dev-tools","text":"v0.1"}]},"include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"label":"编辑此页","base":"https://github.com/musez/web-dev-tools/edit/dev"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"Wang Yue","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"web-dev-tools","language":"zh-hans","links":{"sidebar":{"Home":"https://musez.gitbooks.io/web-dev-tools/content/"},"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"web前端开发常用的工具函数和小功能"},"file":{"path":"docs/chapter1/算法-es6版.md","mtime":"2018-07-25T04:15:54.211Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-26T07:13:15.062Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
