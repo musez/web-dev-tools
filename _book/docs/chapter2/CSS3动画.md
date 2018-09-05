@@ -1,4 +1,15 @@
 # CSS3 常用动画
+
+``` html
+    <script id="jsListTemplate" type="text/html">
+        {{each list}}
+        <li>
+            {{$value.name}}
+        </li>
+        {{/each}}
+    </script>
+```
+
 ## CSS3 常用四个动画（旋转、放大、旋转放大、移动）
 1. 效果一：360°旋转 修改rotate(旋转度数)
     ```css
